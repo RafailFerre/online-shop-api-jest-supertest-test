@@ -1,0 +1,16 @@
+{
+  "name": "online-shop-api-jest-supertest-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Rafail Ferre",
+  "license": "ISC",
+  "description": "Automated API testing with jest and supertest for online-shop-api",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
