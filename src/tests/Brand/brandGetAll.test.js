@@ -1,10 +1,9 @@
-const api = require('../../utils/api');
-// require('dotenv').config();
+const request = require('../../utils/api');
 // const axios = require('axios');
 
 describe('Brand', () => {
   test('GET /brands should return list of brands', async () => {
-    const response = await api.get('/brand')
+    const response = await request.get('/brand')
     //   .set('Authorization', `Bearer ${process.env.API_TOKEN}`);
     // console.log(response.body);
     
@@ -15,6 +14,15 @@ describe('Brand', () => {
     expect(response.body[0]).toHaveProperty('name');
   });
 });
+
+
+
+
+
+
+
+
+
 
 // describe('Brand API', () => {
 //     it('Get /brands should return list of brands', async () => {
