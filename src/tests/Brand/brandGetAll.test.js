@@ -1,13 +1,11 @@
 const request = require('../../utils/api');
 // const axios = require('axios');
 
-describe('Brand', () => {
+describe('GET ALL BRAND', () => {
   test('GET /brands should return list of brands', async () => {
     const response = await request.get('/brand')
-    //   .set('Authorization', `Bearer ${process.env.API_TOKEN}`);
-    // console.log(response.body);
-    
 
+    // console.log(response.body);
     expect(response.status).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
     expect(response.body[0]).toHaveProperty('id');
